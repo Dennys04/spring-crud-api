@@ -1,0 +1,17 @@
+logging:
+  pattern:
+    dateformat: hh:mm
+
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    username: root
+    password: CHtaEnXeGpBTeKHWwWME
+    url: jdbc:mysql://containers-us-west-86.railway.app:5749/railway
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      format_sql: true
