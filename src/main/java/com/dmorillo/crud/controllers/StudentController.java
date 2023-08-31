@@ -42,7 +42,7 @@ public class StudentController {
     */
 
     @GetMapping("{id}")
-    public ResponseEntity<StudentDTO> getStudentById(@PathVariable("id") Long idStudent){
+    public ResponseEntity<StudentDTO> getStudentById(@PathVariable Long id){
         StudentDTO student = studentService.getStudentById(idStudent);
         return new ResponseEntity<>(student, HttpStatus.OK);
     }
