@@ -61,8 +61,8 @@ public class StudentService implements IStudentService{
                 );
 
         ostu.setId(student.getId());
-        ostu.setFirst_name(student.getFirst_name());
-        ostu.setLast_name(student.getLast_name());
+        ostu.setFirstname(student.getFirstname());
+        ostu.setLastname(student.getLastname());
         ostu.setEmail(student.getEmail());
         ostu.setDepartment(student.getDepartment());
 
