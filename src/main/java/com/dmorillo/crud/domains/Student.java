@@ -18,8 +18,8 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String first_name;
-    private String last_name;
+    private String firstname;
+    private String lastname;
     @NaturalId(mutable = true)
     private String email;
     private String department;
@@ -27,8 +27,8 @@ public class Student {
     public StudentDTO toDTO(){
         return StudentDTO.builder()
                 .id(id)
-                .first_name(first_name)
-                .last_name(last_name)
+                .firstname(firstname)
+                .lastname(lastname)
                 .email(email)
                 .department(department)
                 .build();
