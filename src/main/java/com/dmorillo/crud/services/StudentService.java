@@ -75,7 +75,8 @@ public class StudentService implements IStudentService{
     public void deleteStudentById(Long id) {
         if (!studentRepository.existsById(id)){
             throw new StudentNotFoundException("Sorry, student not found!");
-        }
+        } else {
+            studentRepository.deleteById(id);
     }
 
 
